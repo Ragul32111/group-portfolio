@@ -1,0 +1,100 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & fonts */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #1f1c2c, #928dab);
+    padding: 20px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #1f1c2c;
+    padding: 10px 0;
+}
+
+nav a {
+    margin: 5px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #928dab;
+    color: #121212;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 180px;
+    border-radius: 50%;
+    border: 4px solid #928dab;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
